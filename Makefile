@@ -1,5 +1,5 @@
 NAME=svg-edit
-VERSION=2.7.1
+VERSION=2.8.1
 PACKAGE=$(NAME)-$(VERSION)
 MAKEDOCS=naturaldocs/NaturalDocs
 CLOSURE=build/tools/closure-compiler.jar
@@ -10,7 +10,8 @@ ZIP=zip
 JS_FILES=\
 	svgedit.js \
 	jquery-svg.js \
-	contextmenu/jquery.contextmenu.js \
+	contextmenu/jquery.contextMenu.js \
+	pathseg.js \
 	browser.js \
 	svgtransformlist.js \
 	math.js \
@@ -18,10 +19,12 @@ JS_FILES=\
 	svgutils.js \
 	sanitize.js \
 	history.js \
+	historyrecording.js \
 	coords.js \
 	recalculate.js \
 	select.js \
 	draw.js \
+	layer.js \
 	path.js \
 	svgcanvas.js \
 	svg-editor.js \
